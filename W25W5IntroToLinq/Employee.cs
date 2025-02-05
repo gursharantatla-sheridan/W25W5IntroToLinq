@@ -19,6 +19,9 @@ namespace W25W5IntroToLinq
             Salary = salary;
         }
 
-
+        public override string ToString()
+        {
+            return $"{FirstName,-10} {LastName,-10} {Salary,10:C}";
+        }
     }
 }
